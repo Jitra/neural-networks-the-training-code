@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quickdraw recognition</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js"></script>
+  <script src="scripts/utils.js"></script>
+  <script src="scripts/matrix.js"></script>
+  <script src="scripts/neural-network.js"></script>
+  <script src="scripts/sketch.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader" class="noselect hide">
+  <div class="lds-roller">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div id="loader-text">Network is learning</div>
+</div>
+<div class="toolbox">
+  <div class="buttons">
+    <button id="teach">Teach</button>
+    <button id="test_all">Test All</button>
+    <button id="test_single">Test Single</button>
+    <button id="test_drawing">Test Drawing</button>
+    <button id="clear">Clear</button>
+  </div>
+  <div id="drawable_items" class="text" ></div>
+</div>
+
+<div id="network_answer" class="text noselect"></div>
+</body>
+</html>
