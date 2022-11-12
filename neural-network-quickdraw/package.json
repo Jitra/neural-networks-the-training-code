@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "scripts": {
+    "start": "node --max-old-space-size=8192 tools/normalizer.js",
+    "shuffle": "node tools/shuffle.js"
+  }
+}
