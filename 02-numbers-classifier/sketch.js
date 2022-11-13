@@ -1,3 +1,4 @@
+const csvFor100 = 'http://127.0.0.1:5500/mnist_train_100.csv';
 let selectedInputData;
 let networkAnswer;
 
@@ -12,7 +13,7 @@ async function setup(){
     pixelDensity(1);
     frameRate(10)
 
-    const learingData = await fetchData()
+    const learingData = await fetchData(csvFor100)
     const network = new NeuralNetwork(784, 100, 10, 0.3);
     
     for(let i = 0; i < 500; i++){

@@ -2,9 +2,9 @@ function randomNumb(min, max){
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-async function fetchData(){
+async function fetchData(url){
     const GRID_SIZE = 28;
-    const data = (await (await fetch('http://127.0.0.1:5500/mnist_train_100.csv')).text());
+    const data = (await (await fetch(url)).text());
     const allTextLines = data.split(/\r\n|\n/);
     allTextLines.shift();
     allTextLines.pop();
