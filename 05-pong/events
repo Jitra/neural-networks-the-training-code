@@ -1,0 +1,7 @@
+publish/subscribe paddle moveUpStart
+publish/subscribe paddle moveUpStop
+publish/subscribe paddle moveDownStart
+publish/subscribe paddle moveDownStop
+
+subscribe puck move (x,y, )
+subscribe puck reset(winnerPaddle)
